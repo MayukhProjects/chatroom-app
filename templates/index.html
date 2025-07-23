@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatRoom</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+  <div class="chat-wrapper">
+    <header class="chat-header">
+      <h1>💬 ChatRoom</h1>
+      <p>Real-time messaging with Flask & Socket.IO</p>
+    </header>
+
+    <main class="chat-main">
+      <div id="messages" class="chat-box"></div>
+      <form id="chat-form" class="chat-form" onsubmit="sendMessage(); return false;">
+        <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+
+    <footer class="chat-footer">
+      <p>Made with ❤️ using Python & JavaScript</p>
+    </footer>
+  </div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>
+
